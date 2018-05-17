@@ -1,0 +1,18 @@
+//Make an array of company names
+//Make an array of animals
+//Make a loop to that makes a sentence using both arrays in a sentence:
+  //"My company is an Uber for dogs!"
+//Spit out at least 5 sentences to the console.log
+//* Randomize the selection of the company names and animals
+//* Properly construct to "a" vs. "an" within sentence
+
+var companies = ["Uber", "Lyft", "Google", "Apple", "MailChimp"];
+var animals = ["monkeys", "dogs", "giraffes", "emus", "sloths"];
+
+for (var i = 0; i < companies.length; i++) {
+
+  var companyName = companies[Math.floor(Math.random()*companies.length)];
+  var animalName = animals[Math.floor(Math.random()*animals.length)];
+
+  console.log("My company is an " + companyName + " for " + animalName + "!")
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>Area of a triangle</h1>
+
+<p>Click me to find the area of a triangle</p>
+
+<button onclick="areaOfTriangle()">Pick three numbers</button>
+
+<script>
+function areaOfTriangle() {
+var a = Number(prompt("Pick the first number of 3!"));
+var b = Number(prompt("Pick the second number of 3!"));
+var c = Number(prompt("Pick the last number of 3!"));
+var d = a + b + c;
+
+var hp =  d / 2;
+console.log(hp);
+
+var p = hp*(hp-a)*(hp-b)*(hp-c);
+console.log(p);
+
+var area = Math.sqrt(p);
+console.log(area);
+
+alert("The area is " + area + " ");
+}
+</script>
+
+</body>
+</html>
