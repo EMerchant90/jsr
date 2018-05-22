@@ -1,0 +1,34 @@
+<!-- If you'd like some homework, write me a program that:
+Has an array of first names
+Has an array of last names
+Has a numeric variable of "classSize"
+And then, randomly combines those names to create a class manifest of students,
+up until the size of the class defined in #3.
+Requirements:
+Use Math.random()
+Use a function
+Have fun! -->
+
+
+//Array of first names
+var firstNames = ["Shamilah", "Mumtaz", "Akbar", "Aamir", "Ejaz"];
+
+//array of last names
+var lastNames = ["Gillani", "Makhani", "Merchant", "Madadali", "CTO"];
+
+//numeric variable
+var classSize = 9;
+
+var list = [];
+
+//function and math.random to make combinations of arrays
+//until amount of class classSize
+
+function randomizer() {
+  while (classList.length <= classSize) {
+    var randFirst = Math.floor(Math.random() * firstNames.length);
+    var randLast = Math.floor(Math.random() * lastNames.length);
+    classList.push(firstNames[randFirst] + " " + lastNames[randLast]);
+  }
+  console.log(classList);
+}
